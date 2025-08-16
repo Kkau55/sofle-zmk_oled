@@ -35,11 +35,20 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp V>,
+                <&kp LS(V) &kp LS(V)>,
                 <&macro_release>,
-                <&kp LCTRL &kp V>;
+                <&kp LCTRL>;
 
             label = "CTRL_Z";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        TESTE {
+            bindings = <&ctrl_vv>;
+            key-positions = <11 10>;
         };
     };
 
